@@ -40,3 +40,8 @@
 .read-the-docs {
   color: #888;
 } */
+.text-stroke-black {
+  -webkit-text-stroke: 2px black;
+  
+  /* Fill color */
+}
