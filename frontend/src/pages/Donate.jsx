@@ -1,14 +1,46 @@
 import React, { useState, useEffect, useRef } from 'react';
 import NavBar from '../components/NavBar'
 import './Donate.css';
-import InjDogs from './InjDogs';
+import DogCardGrid from './DogCardGrid';
+
+
+
+const donateDogs = [
+  {
+    title: "Rex",
+    text: "Rex suffered a severe leg injury after being hit by a speeding bike. He needs urgent medical care and a safe place to heal.",
+    image: "/images/legInj1.jpeg",
+  },
+  {
+    title: "Canny",
+    text: "Canny was found abandoned with deep wounds on his back, likely from abuse. He needs treatment and the warmth of human kindness.",
+    image: "/images/dogS5.jpg",
+  },
+  {
+    title: "Heart",
+    text: "Heart has a serious skin infection and is visibly malnourished. With your help, he can recover and feel love again.",
+    image: "/images/dogS4.jpg",
+  },
+  {
+    title: "Delo",
+    text: "Delo lost part of his tail in an accident and struggles with mobility. He needs support to walk again and regain strength.",
+    image: "/images/dogS3.jpeg",
+  },
+];
+
 
 const Donate = () => {
+
+  const handleDonateClick = (dog) => {
+    // your donate logic here
+    alert(`Donating to ${dog.title}`);
+  };
 
   // fade-In word
   const [show, setShow] = useState(false);
   const ref = useRef();
 
+  //check mouse near the future
   useEffect(() => {
     const onMove = (e) => {
       if (!ref.current) return;
@@ -81,7 +113,13 @@ const Donate = () => {
 
       {/* Below section - no background effect */}
       <div className="relative z-10 w-full ">
-        <InjDogs />
+        <DogCardGrid
+          cards={donateDogs}
+          heading="These dogs aren’t just looking for homes—they’re hoping for love. Be their hero."
+          buttonLabel="Donate"
+          onButtonClick={handleDonateClick}
+          />
+
       </div>
     </div>
 

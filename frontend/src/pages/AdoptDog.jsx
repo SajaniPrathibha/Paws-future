@@ -1,32 +1,52 @@
 import React from 'react'
 import Slider from './Slider';
+import { useNavigate } from 'react-router-dom'
 
 const slides = [
     {
         id: 1,
         title: 'First',
         subtitle: 'slide',
-        description: 'Praesent ac sem eget est.',
-        image: 'https://picsum.photos/id/1/500/500',
+        description: 'dog1',
+        image: './images/S1.jpeg',
     },
     {
         id: 2,
         title: 'Second',
         subtitle: 'slide',
-        description: 'Praesent ac sem eget est.',
-        image: 'https://picsum.photos/id/234/500/500',
+        description: 'dog2',
+        image: './images/to.jpeg',
     },
     {
         id: 3,
         title: 'Third',
         subtitle: 'slide',
-        description: 'Praesent ac sem eget est.',
-        image: 'https://picsum.photos/id/790/500/500',
+        description: 'dog3',
+        image: './images/s3.jpeg',
+    },
+    {
+        id: 4,
+        title: 'fourth',
+        subtitle: 'slide',
+        description: 'dog4',
+        image: './images/s2.jpg',
+    },
+    {
+        id: 5,
+        title: 'five',
+        subtitle: 'slide',
+        description: 'dog5',
+        image: './images/s4.jpg',
     },
 ];
   
 
 const AdoptDog = () => {
+    const navigate = useNavigate();
+
+    const handleNavigate = () => {
+        navigate('/dogs');
+    }
   return (
       <div className="w-full min-h-[90vh] px-6 md:px-12 lg:px-24 py-10 flex flex-col items-center text-center">
           <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-10 z-10">
@@ -44,6 +64,12 @@ const AdoptDog = () => {
           <div className='w-full min-h-[90vh] px-6 md:px-12 lg:px-24 py-10 flex flex-col items-center text-center'>
               <Slider slides={slides} isPageBackground={true} />
           </div>
+          <button
+              onClick={handleNavigate}
+              className="mt-6 px-6 py-3 bg-[#FF914D] hover:bg-[#FF6B35] text-black font-bold rounded-lg transition cursor-pointer"
+          >
+              Let's Adopt
+          </button>
 
      </div>
       )
