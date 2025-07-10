@@ -11,16 +11,16 @@ const AdoptReasons = () => {
 
   return (
     <div>
-          <div className="relative w-full min-h-[75vh] px-6 md:px-12 lg:px-24 py-10 flex flex-col lg:flex-row justify-between items-center gap-20">
+          <div className="relative w-full mt-20 min-h-[75vh] px-6 md:px-12 lg:px-24 py-10 flex flex-col lg:flex-row justify-between items-center gap-20">
               {/* Content Box */}
               <div className="w-full lg:w-1/2 p-2">
-                  <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-8">
+                  <h2 className="text-3xl md:text-4xl font-extrabold text-[#FFFFFF] mb-8">
                       Why Need To Adopt?
                   </h2>
-                  <p className="!text-xl md:text-4xl font-extrabold text-white mb-8">
+                  <p className="!text-xl md:text-4xl font-extrabold text-[#f4f3f2] mb-8">
                   "Because every abandoned dog deserves more than a second chance — 
                   they deserve a home, a family, and a life filled with love."</p>
-                  <p className="text-gray-100 text-justify mb-5">
+                  <p className="text-[#F0ECE2] text-justify mb-5">
                       Adopting a dog isn’t just an act of kindness — it’s an act of healing, for both of you.
                        Behind every abandoned dog is a heart that’s been broken, eyes that have searched for 
                        love, and a spirit that refuses to give up. When you choose adoption, you’re not just
@@ -33,7 +33,7 @@ const AdoptReasons = () => {
 
                   <button
                       onClick={handleNavigate}
-                      className="mt-6 px-6 py-3 bg-white text-black font-bold rounded-lg hover:bg-gray-200 transition"
+                      className="mt-6 px-6 py-3 bg-[#FF914D] hover:bg-[#FF6B35] text-black font-bold rounded-lg  transition cursor-pointer"
                   >
                       Learn More
                   </button>

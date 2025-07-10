@@ -1,7 +1,9 @@
 import React from 'react'
 import Home from './Home'
 import AdoptReasons from './AdoptReasons'
-import VideoTest from './VideoTest'
+import Help from './Help'
+import AdoptDog from './AdoptDog'
+
 
 const LandingPage = () => {
   return (
@@ -12,6 +14,12 @@ const LandingPage = () => {
           <section id="adoptReasons">
               <AdoptReasons/>
           </section>
+        <section id="help">
+           <Help/>
+        </section>
+      <section id="help">
+        <AdoptDog/>
+      </section>
     </div>
   )
 }
