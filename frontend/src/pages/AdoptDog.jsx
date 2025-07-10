@@ -5,40 +5,41 @@ import { useNavigate } from 'react-router-dom'
 const slides = [
     {
         id: 1,
-        title: 'First',
-        subtitle: 'slide',
-        description: 'dog1',
+        title: 'Bella',
+        subtitle: 'Loving & Calm',
+        description: 'Enjoys cuddles and walks.',
         image: './images/S1.jpeg',
     },
     {
         id: 2,
-        title: 'Second',
-        subtitle: 'slide',
-        description: 'dog2',
+        title: 'Max',
+        subtitle: 'Playful & Loyal',
+        description: 'Loves to fetch and snuggle.',
         image: './images/to.jpeg',
     },
     {
         id: 3,
-        title: 'Third',
-        subtitle: 'slide',
-        description: 'dog3',
+        title: 'Luna',
+        subtitle: 'Sweet & Quiet',
+        description: 'Perfect for peaceful homes.',
         image: './images/s3.jpeg',
     },
     {
         id: 4,
-        title: 'fourth',
-        subtitle: 'slide',
-        description: 'dog4',
+        title: 'Rocky',
+        subtitle: 'Alert & Active',
+        description: 'Great for active families.',
         image: './images/s2.jpg',
     },
     {
         id: 5,
-        title: 'five',
-        subtitle: 'slide',
-        description: 'dog5',
+        title: 'Daisy',
+        subtitle: 'Friendly & Shy',
+        description: 'Warms up with love.',
         image: './images/s4.jpg',
     },
 ];
+  
   
 
 const AdoptDog = () => {
