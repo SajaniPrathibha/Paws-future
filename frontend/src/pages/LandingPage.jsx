@@ -3,6 +3,7 @@ import Home from './Home'
 import AdoptReasons from './AdoptReasons'
 import Help from './Help'
 import AdoptDog from './AdoptDog'
+import Contact from './Contact'
 
 
 const LandingPage = () => {
@@ -19,6 +20,9 @@ const LandingPage = () => {
         </section>
       <section id="help">
         <AdoptDog/>
+      </section>
+      <section id="contact">
+        <Contact/>
       </section>
     </div>
   )
