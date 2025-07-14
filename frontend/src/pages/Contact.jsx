@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import contactImg from "../../public/images/contact.png";
+import contactImg from "/images/contact.png";
 
 const Contact = () => {
     const [showPopup, setShowPopup] = useState(false);
