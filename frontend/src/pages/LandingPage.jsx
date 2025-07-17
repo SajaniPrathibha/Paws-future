@@ -4,6 +4,7 @@ import AdoptReasons from './AdoptReasons'
 import Help from './Help'
 import AdoptDog from './AdoptDog'
 import Contact from './Contact'
+import Footer from '../components/Footer'
 
 
 const LandingPage = () => {
@@ -18,11 +19,14 @@ const LandingPage = () => {
         <section id="help">
            <Help/>
         </section>
-      <section id="help">
+      <section id="adoption">
         <AdoptDog/>
       </section>
       <section id="contact">
         <Contact/>
+      </section>
+      <section id="footer">
+        <Footer/>
       </section>
     </div>
   )

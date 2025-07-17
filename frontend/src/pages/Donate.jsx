@@ -2,6 +2,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import NavBar from '../components/NavBar'
 import './Donate.css';
 import DogCardGrid from './DogCardGrid';
+import Footer from '../components/Footer';
+
 
 
 
@@ -79,8 +81,8 @@ const Donate = () => {
   });
 
   return (
+    <div>
     <div className="w-full flex flex-col items-center text-center">
-      <NavBar />
 
       {/* Hero section with background */}
       <div className="relative w-full px-6 md:px-12 lg:px-24 pt-10 mt-20 z-10 overflow-hidden">
@@ -121,6 +123,9 @@ const Donate = () => {
           />
 
       </div>
+      
+    </div>
+    <Footer/>
     </div>
 
   ); 

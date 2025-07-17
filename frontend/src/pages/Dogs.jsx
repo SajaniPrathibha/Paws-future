@@ -1,7 +1,7 @@
 import React from 'react'
 import DogCardGrid from './DogCardGrid';
 import { useNavigate } from 'react-router-dom'
-
+import Footer from '../components/Footer';
 
 const adoptableDogs = [
     {
@@ -66,6 +66,7 @@ const Dogs = () => {
     };
 
   return (
+    <div>
       <div className="w-full min-h-[90vh] px-6 md:px-12 lg:px-24 py-10 flex flex-col items-center text-center">
           <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-10 z-10">
               Bring Home a Lifetime of Love
@@ -80,8 +81,8 @@ const Dogs = () => {
           </div>
 
      </div>
-     
-    
+     <Footer/>
+      </div>
         
   )
 }

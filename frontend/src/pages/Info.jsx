@@ -1,6 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useState } from 'react';
+import Footer from '../components/Footer'
 
 const tips = [
   {
@@ -31,6 +32,7 @@ const Info = () => {
     navigate('/dogs');
   }
   return (
+    <div>
     <section id="info" className="min-h-screen py-10 px-4 md:px-24 text-white">
       <div className="relative bg-black  w-full min-h-[75vh] px-6 md:px-12 lg:px-24 py-10 flex flex-col lg:flex-row justify-between items-center gap-30"> 
         <div className="w-full lg:w-1/2 p-2">
@@ -116,8 +118,10 @@ const Info = () => {
 
         </div>
       </div>
-
+           
     </section>
+    <Footer/>
+    </div>
     
   )
 }

@@ -30,14 +30,14 @@ const NavBar = () => {
                 <a href="#home" className="block md:inline-block text-[#fffeff] hover:underline py-2" onClick={() => setMenuOpen(false)}>
                     Home
                 </a>
-                <a href="#about" className="block md:inline-block text-[#fffeff] hover:underline py-2" onClick={() => setMenuOpen(false)}>
-                    Dogs
+                <a href="#adoptReasons" className="block md:inline-block text-[#fffeff] hover:underline py-2" onClick={() => setMenuOpen(false)}>
+                    Info
                 </a>
-                <a href="#games" className="block md:inline-block text-[#fffeff] hover:underline py-2" onClick={() => setMenuOpen(false)}>
+                <a href="#help" className="block md:inline-block text-[#fffeff] hover:underline py-2" onClick={() => setMenuOpen(false)}>
                     Help
                 </a>
-                <a href="#tournaments" className="block md:inline-block text-[#fffeff] hover:underline py-2" onClick={() => setMenuOpen(false)}>
-                    Info
+                <a href="#adoption" className="block md:inline-block text-[#fffeff] hover:underline py-2" onClick={() => setMenuOpen(false)}>
+                    adoption
                 </a>
 
                 <a href="#contact" className="block md:inline-block text-[#fffeff] hover:underline py-2" onClick={() => setMenuOpen(false)}>
